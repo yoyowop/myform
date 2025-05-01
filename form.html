@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SLSU Request Form for Records</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            border: 1px solid #000;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            height: 100px;
+            margin-right: 20px;
+        }
+        .header-text {
+            text-align: center;
+        }
+        h2, h3 {
+            margin: 5px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        label, p {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .checkbox-group, .radio-group {
+            margin-top: 10px;
+        }
+        .checkbox-group label,
+        .radio-group label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .signature-line {
+            margin-top: 30px;
+        }
+        .signature-line span {
+            display: inline-block;
+            width: 300px;
+            border-bottom: 1px solid #000;
+        }
+        .claim-slip {
+            margin-top: 40px;
+            padding: 15px;
+            border: 1px dashed #000;
+        }
+        .claim-slip h4 {
+            text-align: center;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .form-row label {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="C:\Users\lecni\OneDrive\ドキュメント\forms.html\slsu - logo.png.jpg" alt="SLSU Logo">
+        <div class="header-text">
+            <h2>Republic of the Philippines</h2>
+            <h3>Southern Luzon State University</h3>
+            <h3>Request Form for Records</h3>
+        </div>
+    </div>
+
+    <div class="section-title">Certification</div>
+    <div class="checkbox-group">
+        <label><input type="checkbox"> Graduation</label>
+        <label><input type="checkbox"> Enrolment</label>
+        <label><input type="checkbox"> CAV</label>
+        <label><input type="checkbox"> Weighted Ave.</label>
+        <label><input type="checkbox"> CAR</label>
+        <label><input type="checkbox"> Units Earned</label>
+        <label><input type="checkbox"> RLE</label>
+    </div>
+
+    <div class="section-title">Credentials / Records</div>
+    <div class="checkbox-group">
+        <label><input type="checkbox"> TOR</label>
+        <label><input type="checkbox"> Diploma</label>
+        <label><input type="checkbox"> FORM-137</label>
+        <label><input type="checkbox"> Transfer Credentials</label>
+        <label><input type="text" placeholder="Others (specify)"></label>
+    </div>
+
+    <div class="section-title">Authentication</div>
+    <div class="checkbox-group">
+        <label><input type="checkbox"> TOR</label>
+        <label><input type="checkbox"> Diploma</label>
+        <label><input type="checkbox"> Reg. Form</label>
+    </div>
+
+    <label>Purpose of Request:
+        <textarea rows="2"></textarea>
+    </label>
+
+    <div class="section-title">Student Information</div>
+    <div class="form-row">
+        <label>Last Name: <input type="text"></label>
+        <label>Given Name: <input type="text"></label>
+        <label>Middle Name: <input type="text"></label>
+    </div>
+
+    <label>Program/Course: <input type="text"></label>
+    <label>Major: <input type="text"></label>
+    <label>Inclusive Dates of Attendance or Date of Graduation: <input type="text"></label>
+    
+    <div class="radio-group">
+        <strong>Status:</strong>
+        <label><input type="radio" name="status"> Undergrad</label>
+        <label><input type="radio" name="status"> Graduate</label>
+    </div>
+
+    <label>Contact Number: <input type="text"></label>
+
+    <div class="signature-line">
+        Signature: <span></span>
+    </div>
+
+    <div class="claim-slip">
+        <h4>Claim Slip</h4>
+        <label>Name of Student: <input type="text"></label>
+        <label>Program/Course: <input type="text"></label>
+        <div class="form-row">
+            <label>Date Filed: <input type="date"></label>
+            <label>ID No. for Undergrad: <input type="text"></label>
+        </div>
+        <label>Claim Date: <input type="date"></label>
+    </div>
+</body>
+</html>
